@@ -1,0 +1,100 @@
+/* .trendSwiper .swiper{
+    padding-top: 50px;
+}
+.trendSwiper .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 240px;
+    height: auto;
+}
+.trendSwiper .swiper-slide img{
+    display: block;
+    width: 100%;
+    border-radius: 0px;
+  
+} */
+
+.trendSwiper .swiper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trendSwiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    max-width: 240px; 
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trendSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/* Responsive Text and Title */
+.trend .section-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    color: #fff;
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 576px) {
+    .trendSwiper .swiper-slide {
+        max-width: 180px;
+        
+    }
+    .trend .section-title {
+        font-size: 1.5rem;
+       
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .trendSwiper .swiper-slide {
+        max-width: 300px;
+    }
+    .trend .section-title {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .trendSwiper .swiper-slide {
+        max-width: 220px;
+    }
+    .trend .section-title {
+        font-size: 1.7rem;
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1200px) {
+    .trendSwiper .swiper-slide {
+        max-width: 240px;
+    }
+}

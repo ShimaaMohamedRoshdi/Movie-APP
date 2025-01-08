@@ -1,0 +1,225 @@
+/* .blog article{
+    background: transparent;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.blog article:hover{
+
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+ 
+}
+.blog .post-img{
+    max-height: 240px;
+    margin: -30px -30px 15px -30px;
+    overflow: hidden;
+}
+.blog .post-category{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+.blog .title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.blog .title a{
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.blog .title a:hover{
+    color: var(--primary);
+}
+.blog .post-author-img{
+    width: 50px;
+    border-radius: 50%;
+  margin-right: 15px;
+}
+.blog .post-author-list{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.blog .post-date{
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+ */
+ .blog article {
+    background: transparent;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px; /* Add smooth rounded corners */
+    overflow: hidden;
+}
+
+.blog article:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    transform: scale(1.02); /* Subtle scaling effect */
+}
+
+.blog .post-img {
+    max-height: 200px; /* Adjust for responsiveness */
+    margin: -20px -20px 15px -20px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+}
+
+.blog .post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures consistent image shape */
+    transition: transform 0.3s ease;
+}
+
+.blog .post-img img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.blog .post-category {
+    font-size: 1rem;
+    font-weight: 500; /* Slightly bolder for readability */
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Consistent styling */
+    letter-spacing: 0.5px;
+}
+
+.blog .title {
+    font-size: 1.2rem; /* Adjust size for smaller screens */
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 15px 0;
+    line-height: 1.5; /* Better spacing for multi-line titles */
+}
+
+.blog .title a {
+    color: #fff;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.blog .title a:hover {
+    color: var(--primary, #f05454); /* Fallback primary color */
+}
+
+.blog .post-author-img {
+    width: 40px; /* Adjust size for smaller screens */
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.blog .post-author-list {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-size: 0.9rem; /* Adjust for responsiveness */
+}
+
+.blog .post-date {
+    font-size: 0.8rem; /* Smaller text for date */
+    color: #fff;
+    margin-bottom: 0;
+    opacity: 0.8; /* Softer text appearance */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .blog .title {
+        font-size: 1rem; /* Adjust for tablets */
+    }
+
+    .blog .post-img {
+        max-height: 180px;
+    }
+
+    .blog .post-author-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .blog .post-category {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog {
+        padding: 10px;
+    }
+
+    .blog article {
+        padding: 15px;
+    }
+
+    .blog .post-img {
+        max-height: 150px;
+    }
+
+    .blog .title {
+        font-size: 0.9rem;
+    }
+
+    .blog .post-category {
+        font-size: 0.8rem;
+    }
+
+    .blog .post-author-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .blog .post-author-list {
+        font-size: 0.8rem;
+    }
+
+    .blog .post-date {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog .title {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .blog .post-img {
+        max-height: 170px;
+    }
+
+    .blog .post-category {
+        font-size: 0.9rem;
+    }
+
+    .blog .post-author-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .blog .post-author-list {
+        font-size: 0.7rem;
+    }
+
+    .blog .post-date {
+        font-size: 0.6rem;
+    }
+    .blog article{
+        width: 100%;
+        height: 100%;
+    }
+}
+

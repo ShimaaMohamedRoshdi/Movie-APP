@@ -1,0 +1,145 @@
+/* 
+.swiper{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.movieSwiper {
+   
+    height: 250px;
+    margin: 20px auto;
+
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+width: 60vw;
+background:rgba(0, 0, 0,0.3);
+backdrop-filter: blur(20px);
+box-shadow: 0 0 40px rgba(255, 255, 255,0.5);
+  }
+
+  .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 200px;
+  }
+  
+  .movieSwiper img {
+    width: 100%;
+    display: block;
+}
+   */
+   .swiper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .movieSwiper {
+    height: 250px;
+    margin: 20px auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw; /* Adjusted for better responsiveness */
+    max-width: 1200px; /* Limit the maximum width for larger screens */
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 20vw; /* Use relative width */
+    max-width: 150px; /* Restrict to a maximum size */
+    height: 30vh; /* Use relative height */
+    max-height: 200px; /* Restrict to a maximum size */
+  }
+  
+  .movieSwiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
+    display: block;
+  }
+  
+  /* Media Queries for Different Screen Sizes */
+  @media (max-width: 768px) {
+    .movieSwiper {
+      height: 200px;
+      width: 90vw; /* Expand for smaller screens */
+    }
+  
+    .swiper-slide {
+      width: 25vw;
+      max-width: 120px;
+      height: 25vh;
+      max-height: 180px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movieSwiper {
+      height: 200px;
+      width: 95vw;
+    }
+  
+    .swiper-slide {
+      width: 30vw;
+      max-width: 100px;
+      height: 20vh;
+      max-height: 150px;
+    }
+  }
+  
+
+  /* //////////////////// */
+  @media (max-width: 768px) {
+    .movie {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Adjusted alignment */
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  
+    .content {
+      max-width: 90%;
+      margin-bottom: 20px; /* Increased spacing */
+    }
+  
+    .date {
+      margin-bottom: 20px; /* Added spacing between date and swiper */
+    }
+  
+    .swiper {
+      width: 90%; /* Adjust swiper width for smaller screens */
+      margin: 20px 0; /* Add spacing above and below swiper */
+    }
+  
+    .swiper-slide {
+      margin-right: 10px; /* Adjust spacing between slides */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h4 {
+      font-size: 1.2rem;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  
+    .date h2 {
+      font-size: 2rem;
+    }
+  
+    .swiper {
+      width: 100%; /* Maximize swiper width for smallest screens */
+    }
+  }
+  

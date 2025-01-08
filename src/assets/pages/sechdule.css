@@ -1,0 +1,27 @@
+  .sechdule .filters{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    margin-top: 50px;
+}
+.sechdule .filters li{
+    color: #fff;
+    padding: 10px 25px;
+    background: #191919;
+    transition: 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.sechdule .filters li:hover,
+.sechdule .filters li.active{
+    background: var(--primary);
+} 
+ 
+ 
+  /* Media query for small screens */
+@media (max-width: 576px) {
+    .sechdule .filters li {
+        flex: 1 1 calc(50% - 10px); /* 2 items per row */
+    }
+}

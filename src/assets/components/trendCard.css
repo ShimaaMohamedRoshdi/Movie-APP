@@ -1,0 +1,49 @@
+
+.trend-card {
+    position: relative;
+    text-align: center; /* Center-align the content */
+    overflow: hidden; /* Ensure no overflow occurs */
+    border: 1px solid #333; /* Optional: Add a border for better visuals */
+    border-radius: 5px; /* Smooth edges */
+}
+
+.trend-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-bottom: 2px solid #f05454; /* Separate the image and button visually */
+}
+
+.trend-card a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    background: var(--primary, #f05454);
+    /*Fallbackprimarycolor*/color: #ffffff;
+    /*Ensuretextisvisible*/font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.trend-card a:hover {
+    background: #191919; /* Change background on hover */
+    color: #f05454; /* Add hover effect for text */
+}
+
+.trend-card ion-icon {
+    font-size: 1.2rem;
+    color: #ffffff; /* Icon matches text color */
+}
+
+.trend-card a:hover ion-icon {
+    color: #f05454; /* Icon hover effect */
+}
