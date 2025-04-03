@@ -1,5 +1,5 @@
 {
-  "homepage": "http://ShimaaMohamedRoshdi.githup.io/Movie---App",
+  "homepage": "http://ShimaaMohamedRoshdi.githup.io/Movie----App",
   "name": "movie-website",
   "private": true,
   "version": "0.0.0",
@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+ "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
