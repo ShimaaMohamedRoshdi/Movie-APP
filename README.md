@@ -10,9 +10,9 @@
 
 React.js (Frontend Framework)
 
-React Hooks (useState, useEffect)
+React Hooks 
 
-Styled Components / CSS (For Styling)
+Styled Components Tailwand CSS (For Styling)
 
 Axios / Fetch API (For Data Fetching)
 
